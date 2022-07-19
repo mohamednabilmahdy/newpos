@@ -1,0 +1,33 @@
+{
+    "name": "graphql-mongo-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon --exec babel-node src/index.js \"  \"",
+        "client": "cd client && yarn serve",
+        "dev": "concurrently --names \"server,client\" \"yarn run server --silent\" \"yarn run client --silent\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.17.12",
+        "@babel/node": "^7.17.10",
+        "@babel/preset-env": "^7.17.12",
+        "dotenv": "^16.0.1",
+        "nodemon": "^2.0.16"
+    },
+    "dependencies": {
+        "apollo-server-core": "^3.7.0",
+        "apollo-server-express": "^3.7.0",
+        "bcrypt": "^5.0.1",
+        "express": "^4.18.1",
+        "graphql": "^16.5.0",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "md5": "^2.3.0",
+        "mongoose": "^6.3.3"
+    }
+}
